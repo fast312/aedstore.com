@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My E-commerce Site</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #232f3e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            margin-top: 10px;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 8px;
+            width: 200px;
+        }
+
+        .search-bar button {
+            padding: 8px 12px;
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Four columns */
+            gap: 15px; /* Equal space between products */
+            padding: 20px;
+            flex: 1 0 auto;
+        }
+
+        /* Product styles */
+        .product {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%; /* Full width for each product */
+        }
+
+        .product img {
+            width: 320px; /* Larger image frame */
+            height: 200px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .product button {
+            padding: 10px 15px;
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #232f3e;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer ul li {
+            margin: 0 10px;
+        }
+
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">My E-commerce Site</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#" id="accountButton">Account</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- First row of product sections -->
+        <section class="product">
+            <img src="https://via.placeholder.com/320x200" alt="Product Image 1">
+            <h2>Product Title 1</h2>
+            <p>Description of Product 1...</p>
+            <p>Price: $19.99</p>
+            <button>Add to Cart</button>
+        </section>
+
+        <section class="product">
+            <img src="https://via.placeholder.com/320x200" alt="Product Image 2">
+            <h2>Product Title 2</h2>
+            <p>Description of Product 2...</p>
+            <p>Price: $24.99</p>
+            <button>Add to Cart</button>
+        </section>
+
+        <section class="product">
+            <img src="https://via.placeholder.com/320x200" alt="Product Image 3">
+            <h2>Product Title 3</h2>
+            <p>Description of Product 3...</p>
+            <p>Price: $29.99</p>
+            <button>Add to Cart</button>
+        </section>
+
+        <section class="product">
+            <img src="https://via.placeholder.com/320x200" alt="Product Image 4">
+            <h2>Product Title 4</h2>
+            <p>Description of Product 4...</p>
+            <p>Price: $39.99</p>
+            <button>Add to Cart</button>
+        </section>
+
+        <!-- Second row of product sections -->
+        <section class="product">
+            <img src="https://via.placeholder.com/320x200" alt="Product Image 5">
+            <h2>Product Title 5</h2>
+            <p>Description of Product 5...</p>
+            <p>Price: $49.99</p>
+            <button>Add to Cart</button>
+        </section>
+
+        <section class="product">
+            <img src="https://via.placeholder.com/320x200" alt="Product Image 6">
+            <h2>Product Title 6</h2>
+            <p>Description of Product 6...</p>
+            <p>Price: $59.99</p>
+            <button>Add to Cart</button>
+        </section>
+
+        <section class="product">
+            <img src="https://via.placeholder.com/320x200" alt="Product Image 7">
+            <h2>Product Title 7</h2>
+            <p>Description of Product 7...</p>
+            <p>Price: $69.99</p>
+            <button>Add to Cart</button>
+        </section>
+
+        <section class="product">
+            <img src="https://via.placeholder.com/320x200" alt="Product Image 8">
+            <h2>Product Title 8</h2>
+            <p>Description of Product 8...</p>
+            <p>Price: $79.99</p>
+            <button>Add to Cart</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
